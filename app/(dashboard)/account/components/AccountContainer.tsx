@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useRouter } from "@/node_modules/next/navigation";
 import { getPayingStatus } from "@/utils/stripe";
 import { Account, Subscription } from "@prisma/client";
 import axios from "axios";
@@ -58,10 +57,9 @@ function AccountContainer({ account, subscription }: AccountContainerProps) {
   const handleStripe = async () => {
     try {
       const response = await axios.get("/api/stripe");
-      const router = useRouter();
 
       if (response.data.url) {
-        router.push(response.data.url);
+        window.location.href = response.data.url;
       } else {
         console.error("Something went wrong with Stripe.");
         toast.error("Something went wrong with Stripe. Please try again.");
