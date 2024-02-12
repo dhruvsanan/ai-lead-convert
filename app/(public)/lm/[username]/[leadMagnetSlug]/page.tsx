@@ -39,7 +39,7 @@ export async function generateMetadata({
         url: `https://image.thum.io/get/auth/${
           process.env.SCREENSHOT_ACCESS_KEY ?? ""
           // TODO change name
-        }/width/1200/crop/700/https://www.leadconvert.ai/lm/${
+        }/width/1200/crop/700/https://ai-lead-convert.vercel.app/lead-magnets/lm/${
           account.username
         }/${leadMagnet.slug}`,
         width: 4096,

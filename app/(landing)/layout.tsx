@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './components/Footer'
 import LandingPageNavbar from './components/LandingPageNavbar'
 
 function LandingLayout({
@@ -10,6 +11,7 @@ function LandingLayout({
     <section className="flex min-h-screen flex-col overflow-x-clip">
         <LandingPageNavbar />
         <div className="flex-grow">{children}</div> 
+        <Footer/>
     </section>
   )
 }
