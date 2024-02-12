@@ -34,7 +34,7 @@ export async function GET() {
       line_items: [
         {
           price_data: {
-            currency: "INR",
+            currency: "USD",
             product_data: {
               name: "Lead Convert Pro",
               description: "Unlimited AI Lead Magnets",
