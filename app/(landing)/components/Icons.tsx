@@ -1,4 +1,4 @@
-import { LucideProps } from "../../node_modules/lucide-react/dist/lucide-react";
+import { LucideProps } from "../../../node_modules/lucide-react/dist/lucide-react";
 
 export const Icons = {
     logo: (props: LucideProps) => (
