@@ -11,6 +11,11 @@ export default authMiddleware({
     "/api/webhooks/stripe",
     "/api/lead-magnet/publish",
     "/api/lead-magnet/unpublish",
+    "/lm/(.*)",
+    "/api/lead",
+    "/api/openai",
+    "/api/uploadthing"
+
   ],
 });
 
